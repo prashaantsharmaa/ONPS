@@ -20,6 +20,7 @@ create table  Voter(voterIdentityNumber int(15),
 					fathersName varchar(60) NOT NULL ,
 					mothersName varchar(60) NOT NULL ,
 					voterIdentityCard blob ,
+					voterStatus boolean default false,
 					primary key(voterIdentityNumber)
 					);				  
 				  
