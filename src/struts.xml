@@ -1,0 +1,31 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="RegVoter" class="com.hp.RegVoterAction" >
+            <result name="success">success.jsp</result>
+            <result name="error">RegVoter.jsp</result>
+            <result name="input">RegVoter.jsp</result>
+        </action>
+        
+        <action name="RegCandidate" class="com.hp.RegCandidateAction">
+
+            <result name="success">homepage.jsp</result>
+            <result name="error">RegCandidate.jsp</result>    
+            <result name="input">RegCandidate.jsp</result>      
+        </action>
+        <action name="LoginValidator" class="com.hp.LoginValidatorAction" >
+            <result name="success">VoterProfile.jsp</result>
+            <result name="error"></result>
+            <result name="input">index.jsp</result>
+        </action>
+        <action name="PromisesValidator" class="com.hp.AddEditPromisesAction">
+            <result name="success">Message.jsp</result>
+            <result name="error"></result>
+            <result name="input">AddEditPromises.jsp</result>
+        </action>
+    </package>
+</struts>
